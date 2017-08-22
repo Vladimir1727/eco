@@ -1,0 +1,581 @@
+@font-face {
+  font-family: 'PT Sans Bold';
+  src: url("bold.ttf"); }
+@font-face {
+  font-family: 'PT Serif Italic';
+  src: url("italic.ttf"); }
+@font-face {
+  font-family: 'PT Sans Regular';
+  src: url("regular.ttf"); }
+body {
+  font-family: "PT Sans Regular", Arial, sans-serif;
+  color: #403b3b; }
+
+div.social {
+  width: 120px;
+  text-align: center; }
+  div.social > a {
+    display: inline-block;
+    width: 24px;
+    height: 26px; }
+  div.social > a.tw {
+    background: url("../img/tw.png");
+    margin-right: 5px; }
+  div.social > a.fb {
+    background: url("../img/fb.png");
+    margin-right: 5px; }
+  div.social > a.gp {
+    background: url("../img/gplus.png"); }
+
+header {
+  max-width: 1180px;
+  margin: 0 auto; }
+  header:after {
+    content: '';
+    display: block;
+    clear: both; }
+  header > div {
+    float: left; }
+  header > div.logo img {
+    margin-top: 10px; }
+  header > div.banner {
+    width: 730px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 0 0 10px; }
+    header > div.banner img {
+      width: 730px; }
+  header > div.menu {
+    width: 160px;
+    font-size: 16px; }
+    header > div.menu div.social {
+      margin-top: 5px;
+      width: 160px; }
+    header > div.menu div.login {
+      margin-top: 5px;
+      text-align: center; }
+      header > div.menu div.login > a {
+        color: #ad0000;
+        text-align: center; }
+    header > div.menu div.add {
+      text-align: center; }
+      header > div.menu div.add > a {
+        color: #058a43;
+        text-align: center; }
+    header > div.menu div.menu {
+      text-align: center;
+      position: relative; }
+      header > div.menu div.menu span.dot {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        background: #B3E61D;
+        border-radius: 50%;
+        margin-right: 12px; }
+        header > div.menu div.menu span.dot:last-of-type {
+          margin-right: 0; }
+      header > div.menu div.menu ul {
+        position: absolute;
+        z-index: 2;
+        background: #fff;
+        display: none;
+        margin: 0 0 0 0;
+        list-style: none;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.48); }
+        header > div.menu div.menu ul li {
+          text-align: center;
+          margin-bottom: 10px; }
+          header > div.menu div.menu ul li a {
+            color: #058a43; }
+          header > div.menu div.menu ul li.red a {
+            color: #ad0000; }
+      header > div.menu div.menu:hover ul {
+        display: block; }
+
+h1 {
+  max-width: 1180px;
+  color: #3b5998;
+  font-family: "PT Serif Italic", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 40px auto 45px auto; }
+
+span.small {
+  display: none; }
+
+main {
+  max-width: 1180px;
+  margin: 0 auto; }
+  main section.list {
+    margin: 0 -20px; }
+    main section.list:after {
+      content: '';
+      display: block;
+      clear: both; }
+  main aside {
+    width: 265px;
+    height: 320px;
+    margin: 0 20px 30px 20px;
+    float: left;
+    position: relative; }
+    main aside div.photo {
+      width: 265px;
+      height: 265px;
+      overflow: hidden;
+      position: relative; }
+      main aside div.photo > img {
+        width: 265px;
+        border-left: 1px #D4D4D4 solid;
+        border-right: 1px #D4D4D4 solid; }
+      main aside div.photo div.winner {
+        position: absolute;
+        padding: 15px;
+        top: 0;
+        left: 2px;
+        width: 261px;
+        height: 50px;
+        color: #fff;
+        font-family: "PT Sans Bold", Arial, sans-serif; }
+        main aside div.photo div.winner h2, main aside div.photo div.winner p {
+          margin: 0;
+          padding: 0;
+          float: left;
+          font-size: 16px;
+          text-transform: uppercase;
+          line-height: 1.4; }
+        main aside div.photo div.winner h2 {
+          float: left; }
+        main aside div.photo div.winner p {
+          float: right; }
+      main aside div.photo div.shadow {
+        width: 261px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 2px;
+        background: #202020;
+        opacity: 0.478; }
+      main aside div.photo div.shadow2 {
+        width: 261px;
+        height: 102px;
+        position: absolute;
+        top: 87px;
+        left: 270px;
+        background: black;
+        opacity: 0.651;
+        padding: 30px 56px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+      main aside div.photo div.pop {
+        width: 261px;
+        height: 102px;
+        position: absolute;
+        top: 87px;
+        left: 270px;
+        text-align: center;
+        padding: 30px 56px;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        main aside div.photo div.pop a {
+          display: inline-block;
+          width: 52px;
+          height: 34px; }
+          main aside div.photo div.pop a:first-of-type {
+            background: url("../img/glaz.png") center bottom no-repeat;
+            margin-right: 40px; }
+          main aside div.photo div.pop a:last-of-type {
+            background: url("../img/foto.png") center bottom no-repeat; }
+      main aside div.photo:hover div.pop {
+        left: 2px; }
+      main aside div.photo:hover div.shadow2 {
+        left: 2px; }
+    main aside div.info:after {
+      content: '';
+      display: block;
+      clear: both; }
+    main aside div.info > div {
+      float: left;
+      margin: 5px 0 0 0; }
+    main aside div.info div.name {
+      width: 200px;
+      overflow: hidden; }
+      main aside div.info div.name h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #403b3b; }
+      main aside div.info div.name h4 {
+        margin: 0;
+        font-size: 12px;
+        color: #058a43; }
+      main aside div.info div.name h5 {
+        margin: 0; }
+        main aside div.info div.name h5 a {
+          font-size: 14px;
+          color: #403b3b; }
+    main aside div.info div.voice {
+      width: 65px;
+      position: relative; }
+      main aside div.info div.voice h5 {
+        color: #ad0000;
+        font-size: 16px;
+        text-align: right;
+        margin: 0 8px 0 0;
+        cursor: pointer; }
+      main aside div.info div.voice p.vote {
+        color: #058a43;
+        font-size: 14px;
+        margin: 0;
+        text-align: right; }
+        main aside div.info div.voice p.vote span {
+          display: inline-block;
+          width: 19px;
+          height: 18px;
+          background: url("../img/check.png"); }
+      main aside div.info div.voice div.pop {
+        display: none;
+        position: absolute;
+        width: 110px;
+        height: 40px;
+        color: #ad0000;
+        font-family: "PT Sans Regular", Arial, sans-serif;
+        font-size: 14px;
+        padding: 2px 7px;
+        border: 1px #ad0000 solid;
+        background: #fff;
+        bottom: 20px;
+        right: 0;
+        line-height: 1; }
+      main aside div.info div.voice h5:hover + div.pop {
+        display: block; }
+    main aside div.green1 {
+      position: absolute;
+      height: 335px;
+      width: 2px;
+      top: 0;
+      right: -20px;
+      background: #00A747; }
+    main aside div.green2 {
+      position: absolute;
+      height: 2px;
+      width: 300px;
+      bottom: 0px;
+      left: 0px;
+      background: #00A747; }
+  main section.pagg {
+    text-align: center; }
+    main section.pagg ul {
+      margin: 0 auto 20px auto;
+      padding: 0;
+      width: 175px; }
+      main section.pagg ul li {
+        display: inline-block;
+        line-height: 14px;
+        margin-right: 15px; }
+        main section.pagg ul li a {
+          color: #ad0000;
+          font-family: "PT Sans Regular", Arial, sans-serif;
+          font-size: 13px; }
+        main section.pagg ul li:last-child {
+          margin-right: 0px; }
+    main section.pagg a {
+      font-family: "PT Sans Regular", Arial, sans-serif;
+      font-size: 14px;
+      color: #058a43; }
+  main section.eco {
+    width: 945px;
+    margin: 30px auto 40px auto; }
+    main section.eco:after {
+      content: '';
+      display: block;
+      clear: both; }
+    main section.eco h2 {
+      margin: 0;
+      display: inline-block;
+      width: 97px;
+      height: 140px;
+      float: left;
+      text-align: center;
+      padding: 50px 25px 40px 25px;
+      color: #fff;
+      font-family: "PT Sans Regular", Arial, sans-serif;
+      font-size: 21px;
+      background: #ad0000; }
+    main section.eco a {
+      float: left;
+      width: 845px;
+      height: 140px;
+      background: url("../img/eco.png");
+      background-size: cover; }
+
+footer {
+  background-color: #F6F6F6;
+  font-family: "PT Sans Regular", Arial, sans-serif;
+  font-size: 14px;
+  color: #058a43;
+  min-height: 75px; }
+  footer:after {
+    content: '';
+    display: block;
+    clear: both; }
+  footer section {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 20px 0 40px 0; }
+  footer > section > div {
+    float: left; }
+  footer a, footer a:visited, footer a:hover {
+    color: #058a43;
+    padding-right: 10px; }
+    footer a.red, footer a:visited.red, footer a:hover.red {
+      color: #ad0000; }
+    footer a:last-of-type, footer a:visited:last-of-type, footer a:hover:last-of-type {
+      padding-right: 0; }
+  footer div.copy {
+    color: #7a7a7b;
+    width: 250px; }
+  footer div.all {
+    width: 135px; }
+  footer div.menu {
+    width: 480px; }
+  footer div.contr {
+    width: 145px; }
+  footer div.ads {
+    width: 50px;
+    text-align: right; }
+
+@media screen and (max-width: 1180px) {
+  header {
+    width: 795px;
+    min-height: 130px; }
+    header div.banner {
+      width: 510px;
+      margin-left: 5px; }
+    header > div.menu {
+      position: relative;
+      width: 100%; }
+      header > div.menu div.add {
+        position: absolute;
+        left: 0;
+        top: 0; }
+      header > div.menu div.menu {
+        position: absolute;
+        right: 0;
+        top: 0; }
+      header > div.menu div.login {
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        top: 0;
+        margin-top: 0; }
+      header > div.menu div.social {
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        top: 30px; }
+
+  h1 {
+    padding: 0 15px; }
+
+  main {
+    max-width: 875px; }
+    main section.eco {
+      width: 795px; }
+      main section.eco a {
+        width: 695px;
+        background-position: center; }
+
+  footer section {
+    width: 795px; }
+  footer div.copy {
+    width: 195px; }
+  footer div.all {
+    width: 120px; }
+  footer div.menu {
+    width: 220px; }
+  footer div.contr {
+    width: 100px; }
+  footer div.social {
+    width: 110px; } }
+@media screen and (max-width: 1024px) {
+  span.big {
+    display: none; }
+
+  span.small {
+    display: inline; }
+
+  header {
+    width: 297px;
+    min-height: 200px; }
+    header div.logo {
+      float: none;
+      margin: 0 auto;
+      text-align: center; }
+    header div.banner {
+      width: 297px;
+      height: 48px;
+      margin: 15px auto; }
+      header div.banner a img {
+        width: 297px; }
+    header > div.menu {
+      width: 100%;
+      margin: 0 auto; }
+      header > div.menu div.login {
+        margin-left: -50px; }
+
+  main {
+    max-width: 570px; }
+    main section.list {
+      width: 610px; }
+    main section.eco {
+      width: 570px; }
+      main section.eco a {
+        width: 470px; }
+
+  footer {
+    height: 220px;
+    background: #fff; }
+    footer section {
+      width: 297px;
+      position: relative;
+      padding: 85px 0 35px 0; }
+      footer section > div {
+        float: none;
+        text-align: center; }
+      footer section div.all, footer section div.copy, footer section div.menu, footer section div.contr, footer section div.ads {
+        width: 100%;
+        text-align: center; }
+        footer section div.all a, footer section div.copy a, footer section div.menu a, footer section div.contr a, footer section div.ads a {
+          display: block; }
+      footer section div.copy {
+        width: auto;
+        position: absolute;
+        top: 205px;
+        left: 60px; }
+      footer section div.social {
+        position: absolute;
+        top: 30px;
+        left: 105px;
+        width: auto; }
+      footer section div.all {
+        margin-bottom: 20px; }
+      footer section div.contr {
+        text-align: right; }
+      footer section div.ads {
+        text-align: left; }
+      footer section div.contr, footer section div.ads {
+        width: 50%;
+        float: left;
+        margin-top: 20px;
+        padding: 0 8px; }
+        footer section div.contr a, footer section div.ads a {
+          display: inline; }
+      footer section div.all, footer section div.menu {
+        width: 100%; }
+        footer section div.all a, footer section div.menu a {
+          display: inline; }
+
+  h1 {
+    display: none; }
+
+  span.big {
+    display: none; }
+
+  span.small {
+    display: inline; }
+
+  header {
+    width: 297px;
+    height: 235px; }
+    header div.logo {
+      width: 297px;
+      height: 83px;
+      margin: 0 auto; }
+    header div.banner {
+      width: 297px;
+      height: 48px;
+      margin: 15px auto; }
+      header div.banner a img {
+        width: 297px; }
+    header > div.menu {
+      width: 100%;
+      margin: 0 auto; }
+      header > div.menu div.login {
+        margin-left: -50px; }
+
+  main {
+    width: 100%; }
+    main section.list {
+      width: 100%;
+      margin: 0; }
+      main section.list aside {
+        float: none;
+        margin: 0 auto 30px auto; }
+    main section.eco {
+      width: 297px;
+      margin: 0 auto; }
+      main section.eco h2, main section.eco > a {
+        float: none;
+        width: 297px;
+        display: block; }
+      main section.eco h2 {
+        font-size: 25px;
+        padding: 5px 0;
+        height: 40px; }
+        main section.eco h2 br {
+          display: none; }
+      main section.eco > a {
+        height: 85px; }
+    main section.pagg {
+      display: none; }
+
+  /*footer{
+      background: #fff;
+      height: 220px;
+      section{
+          position: relative;
+          padding: 85px 0 35px 0;
+          width: 297px;
+          div.copy{
+              width: auto;
+              position: absolute;
+              top: 205px;
+              left: 60px;
+          }
+          div.social{
+              position: absolute;
+              top: 30px;
+              left: 110px;
+              width: auto;
+          }
+          div.all, div.menu{
+              width: 100%;
+              a{
+                  display: inline;
+              }
+          }
+          div.contr, div.ads{
+              width: 50%;
+              float: left;
+              margin-top: 20px;
+              padding: 0 8px;
+              a{
+                  display: inline;
+              }
+          }
+          div.all{
+              margin-bottom: 20px;
+          }
+          div.contr{
+              text-align: right;
+          }
+          div.ads{
+              text-align: left;
+          }
+      }
+  }*/ }
+
+/*# sourceMappingURL=style.css.map */
