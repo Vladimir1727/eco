@@ -426,43 +426,6 @@ footer {
       header > div.menu div.login {
         margin-left: -50px; }
 
-  main {
-    max-width: none; }
-    main section.list {
-      width: 100%; }
-      main section.list aside {
-        width: 100%;
-        height: auto; }
-        main section.list aside div.photo {
-          width: 100%;
-          height: auto; }
-          main section.list aside div.photo img {
-            width: 100%; }
-          main section.list aside div.photo:hover div.pop {
-            top: 100px; }
-          main section.list aside div.photo:hover div.shadow2 {
-            top: 100px; }
-        main section.list aside div.shadow {
-          width: 100%; }
-        main section.list aside div.winner {
-          width: 100%; }
-        main section.list aside div.shadow2 {
-          top: -100px;
-          left: 0;
-          width: 100%; }
-        main section.list aside div.pop {
-          top: -100px;
-          left: 0;
-          width: 100%; }
-        main section.list aside div.green1, main section.list aside div.green2 {
-          display: none; }
-        main section.list aside div.voice div.pop {
-          top: -50px; }
-    main section.eco {
-      width: 100%; }
-      main section.eco a {
-        width: 100%; }
-
   footer {
     height: 220px;
     background: #fff; }
@@ -538,11 +501,8 @@ footer {
   main {
     width: 100%; }
     main section.list {
-      width: 100%;
-      margin: 0; }
-      main section.list aside {
-        float: none;
-        margin: 0 auto 30px auto; }
+      margin: 0 auto;
+      width: 610px; }
     main section.eco {
       width: 100%;
       margin: 0 auto; }
@@ -606,5 +566,42 @@ footer {
           }
       }
   }*/ }
+@media screen and (max-width: 570px) {
+  main {
+    max-width: none; }
+    main section.list {
+      width: 100%; }
+      main section.list aside {
+        width: 100%;
+        height: auto; }
+        main section.list aside div.photo {
+          width: 100%;
+          height: auto; }
+          main section.list aside div.photo img {
+            width: 100%; }
+          main section.list aside div.photo:hover div.pop {
+            top: 100px; }
+          main section.list aside div.photo:hover div.shadow2 {
+            top: 100px; }
+        main section.list aside div.shadow {
+          width: 100%; }
+        main section.list aside div.winner {
+          width: 100%; }
+        main section.list aside div.shadow2 {
+          top: -100px;
+          left: 0;
+          width: 100%; }
+        main section.list aside div.pop {
+          top: -100px;
+          left: 0;
+          width: 100%; }
+        main section.list aside div.green1, main section.list aside div.green2 {
+          display: none; }
+        main section.list aside div.voice div.pop {
+          top: -50px; }
+    main section.eco {
+      width: 100%; }
+      main section.eco a {
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

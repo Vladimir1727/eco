@@ -554,59 +554,7 @@ footer{
             }
         }
     }
-    main{
-        max-width: none;
-        section.list{
-            width: 100%;
-            aside{
-                width: 100%;
-                height: auto;
-                div.photo{
-                    width: 100%;
-                    height: auto;
-                    img{
-                        width: 100%;
-                    }
-                    &:hover div.pop{
-                        top: 100px;
-                    }
-                    &:hover div.shadow2{
-                        top: 100px;
-                    }
-                }
-                div.shadow{
-                    width: 100%;
-                }
-                div.winner{
-                    width: 100%;
-                }
-                div.shadow2{
-                    top: -100px;
-                    left:0;
-                    width: 100%;
-                }
-                div.pop{
-                    top: -100px;
-                    left:0;
-                    width: 100%;
-                }
-                div.green1, div.green2{
-                    display: none;
-                }
-                div.voice{
-                    div.pop{
-                        top: -50px;
-                    }
-                }
-            }
-        }
-        section.eco{
-            width: 100%;
-            a{
-                width: 100%;
-            }
-        }
-    }
+
     footer{
         height: 220px;
         background: #fff;
@@ -709,11 +657,11 @@ footer{
     main{
         width: 100%;
         section.list{
-            width: 100%;
-            margin:0;
+            margin: 0 auto;
+            width: 610px;
             aside{
-                float: none;
-                margin: 0 auto 30px auto;
+                //float: none;
+                //margin: 0 auto 30px auto;
             }
         }
         section.eco{
@@ -785,4 +733,60 @@ footer{
             }
         }
     }*/
+}
+
+@media screen and (max-width: 570px){
+main{
+    max-width: none;
+    section.list{
+        width: 100%;
+        aside{
+            width: 100%;
+            height: auto;
+            div.photo{
+                width: 100%;
+                height: auto;
+                img{
+                    width: 100%;
+                }
+                &:hover div.pop{
+                    top: 100px;
+                }
+                &:hover div.shadow2{
+                    top: 100px;
+                }
+            }
+            div.shadow{
+                width: 100%;
+            }
+            div.winner{
+                width: 100%;
+            }
+            div.shadow2{
+                top: -100px;
+                left:0;
+                width: 100%;
+            }
+            div.pop{
+                top: -100px;
+                left:0;
+                width: 100%;
+            }
+            div.green1, div.green2{
+                display: none;
+            }
+            div.voice{
+                div.pop{
+                    top: -50px;
+                }
+            }
+        }
+    }
+    section.eco{
+        width: 100%;
+        a{
+            width: 100%;
+        }
+    }
+}
 }
