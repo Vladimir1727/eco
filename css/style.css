@@ -408,15 +408,15 @@ footer {
     display: inline; }
 
   header {
-    width: 297px;
+    width: 100%;
     min-height: 200px; }
     header div.logo {
       float: none;
       margin: 0 auto;
       text-align: center; }
     header div.banner {
-      width: 297px;
-      height: 48px;
+      width: 100%;
+      height: auto;
       margin: 15px auto; }
       header div.banner a img {
         width: 297px; }
@@ -427,13 +427,41 @@ footer {
         margin-left: -50px; }
 
   main {
-    max-width: 570px; }
+    max-width: none; }
     main section.list {
-      width: 610px; }
+      width: 100%; }
+      main section.list aside {
+        width: 100%;
+        height: auto; }
+        main section.list aside div.photo {
+          width: 100%;
+          height: auto; }
+          main section.list aside div.photo img {
+            width: 100%; }
+          main section.list aside div.photo:hover div.pop {
+            top: 100px; }
+          main section.list aside div.photo:hover div.shadow2 {
+            top: 100px; }
+        main section.list aside div.shadow {
+          width: 100%; }
+        main section.list aside div.winner {
+          width: 100%; }
+        main section.list aside div.shadow2 {
+          top: -100px;
+          left: 0;
+          width: 100%; }
+        main section.list aside div.pop {
+          top: -100px;
+          left: 0;
+          width: 100%; }
+        main section.list aside div.green1, main section.list aside div.green2 {
+          display: none; }
+        main section.list aside div.voice div.pop {
+          top: -50px; }
     main section.eco {
-      width: 570px; }
+      width: 100%; }
       main section.eco a {
-        width: 470px; }
+        width: 100%; }
 
   footer {
     height: 220px;
@@ -488,21 +516,22 @@ footer {
     display: inline; }
 
   header {
-    width: 297px;
+    width: 100%;
     height: 235px; }
     header div.logo {
-      width: 297px;
+      width: 100%;
       height: 83px;
       margin: 0 auto; }
     header div.banner {
-      width: 297px;
-      height: 48px;
+      width: 100%;
+      height: auto;
       margin: 15px auto; }
       header div.banner a img {
-        width: 297px; }
+        width: 100%; }
     header > div.menu {
       width: 100%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      height: 70px; }
       header > div.menu div.login {
         margin-left: -50px; }
 
@@ -515,11 +544,11 @@ footer {
         float: none;
         margin: 0 auto 30px auto; }
     main section.eco {
-      width: 297px;
+      width: 100%;
       margin: 0 auto; }
       main section.eco h2, main section.eco > a {
         float: none;
-        width: 297px;
+        width: 100%;
         display: block; }
       main section.eco h2 {
         font-size: 25px;

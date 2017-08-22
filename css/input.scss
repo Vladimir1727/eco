@@ -529,7 +529,7 @@ footer{
         display: inline;
     }
     header{
-        width: 297px;
+        width: 100%;
         min-height: 200px;
         div.logo{
             float: none;
@@ -537,8 +537,8 @@ footer{
             text-align: center;
         }
         div.banner{
-            width: 297px;
-            height: 48px;
+            width: 100%;
+            height: auto;
             margin: 15px auto;
             a{
                 img{
@@ -555,14 +555,55 @@ footer{
         }
     }
     main{
-        max-width: 570px;
+        max-width: none;
         section.list{
-            width: 610px;
+            width: 100%;
+            aside{
+                width: 100%;
+                height: auto;
+                div.photo{
+                    width: 100%;
+                    height: auto;
+                    img{
+                        width: 100%;
+                    }
+                    &:hover div.pop{
+                        top: 100px;
+                    }
+                    &:hover div.shadow2{
+                        top: 100px;
+                    }
+                }
+                div.shadow{
+                    width: 100%;
+                }
+                div.winner{
+                    width: 100%;
+                }
+                div.shadow2{
+                    top: -100px;
+                    left:0;
+                    width: 100%;
+                }
+                div.pop{
+                    top: -100px;
+                    left:0;
+                    width: 100%;
+                }
+                div.green1, div.green2{
+                    display: none;
+                }
+                div.voice{
+                    div.pop{
+                        top: -50px;
+                    }
+                }
+            }
         }
         section.eco{
-            width: 570px;
+            width: 100%;
             a{
-                width: 470px;
+                width: 100%;
             }
         }
     }
@@ -635,11 +676,11 @@ footer{
         display: inline;
     }
     header{
-        width: 297px;
+        width: 100%;
         height: 235px;
         div.logo{
             //background: url('../img/logo2.png');
-            width: 297px;
+            width: 100%;
             height: 83px;
             margin: 0 auto;
             >img{
@@ -647,18 +688,19 @@ footer{
             }
         }
         div.banner{
-            width: 297px;
-            height: 48px;
+            width: 100%;
+            height: auto;
             margin: 15px auto;
             a{
                 img{
-                    width: 297px;
+                    width: 100%;
                 }
             }
         }
         >div.menu{
             width: 100%;
             margin: 0 auto;
+            height: 70px;
             div.login{
                 margin-left: -50px;
             }
@@ -675,11 +717,11 @@ footer{
             }
         }
         section.eco{
-           width: 297px;
+           width: 100%;
            margin: 0 auto;
             h2, >a{
                 float: none;
-                width: 297px;
+                width: 100%;
                 display: block;
             }
             h2{
